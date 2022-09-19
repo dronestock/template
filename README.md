@@ -9,7 +9,7 @@
 ![最佳语言](https://img.shields.io/github/languages/top/dronestock/drone)
 ![星星个数](https://img.shields.io/github/stars/dronestock/drone?style=social)
 
-项目介绍
+Drone插件模板，要编写Drone插件，可以从此模板开始创建项目
 
 ## 捐助
 
