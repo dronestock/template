@@ -10,7 +10,7 @@ type plugin struct {
 	drone.Base
 
 	// TODO 配置项，可以使用结构体
-	// 如何配置选项请参数https://github.com/dronestock/drone
+	// 如何配置选项请参数：https://github.com/dronestock/drone
 	Todo string `default:"${PLUGIN_TODO=${TODO=默认值}}" validate:"required"`
 }
 
