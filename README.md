@@ -37,4 +37,5 @@ Drone插件模板，要编写Drone插件，可以从此模板开始创建项目
 ## 感谢Jetbrains
 
 本项目通过`Jetbrains开源许可IDE`编写源代码，特此感谢
+
 [![Jetbrains图标](https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg)](https://www.jetbrains.com/?from=dronestock/drone)
