@@ -40,7 +40,8 @@ Drone插件模板，要编写Drone插件，可以从此模板开始创建项目
 - [Protobuf](https://www.dronestock.tech/plugin/protobuf) Protobuf编译、静态检查以及高级功能
 - [Docker](https://www.dronestock.tech/plugin/docker) Docker编译、打包以及发布到镜像仓库
 - [Node](https://www.dronestock.tech/plugin/node) Node编译、打包以及发布到仓库
-- [MCU](https://www.dronestock.tech/plugin/mcu) 各种模块依赖文件修改
+- [Cos](https://www.dronestock.tech/plugin/cos) 腾讯云对象存储基本配置、文件上传等
+- [Mcu](https://www.dronestock.tech/plugin/mcu) 各种模块依赖文件修改
 
 ## 感谢Jetbrains
 
