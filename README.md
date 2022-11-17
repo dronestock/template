@@ -34,6 +34,14 @@ Drone插件模板，要编写Drone插件，可以从此模板开始创建项目
 ![支持宝](https://github.com/storezhang/donate/raw/master/alipay-small.jpg)
 ![微信](https://github.com/storezhang/donate/raw/master/weipay-small.jpg)
 
+## 插件列表
+- [Git](https://www.dronestock.tech/plugin/git)gg
+- [Maven](https://www.dronestock.tech/plugin/maven)
+- [Protobuf](https://www.dronestock.tech/plugin/protobuf)
+- [Docker](https://www.dronestock.tech/plugin/docker)
+- [Node](https://www.dronestock.tech/plugin/node)
+- [MCU](https://www.dronestock.tech/plugin/mcu)
+
 ## 感谢Jetbrains
 
 本项目通过`Jetbrains开源许可IDE`编写源代码，特此感谢
