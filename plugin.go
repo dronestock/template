@@ -11,7 +11,7 @@ type plugin struct {
 
 	// TODO 配置项，可以使用结构体
 	// 如何配置选项请参数：https://github.com/dronestock/drone
-	Todo string `default:"${PLUGIN_TODO=${TODO=默认值}}" validate:"required"`
+	Todo string `default:"${TODO=默认值}" validate:"required"`
 }
 
 func newPlugin() drone.Plugin {
@@ -30,8 +30,8 @@ func (p *plugin) Steps() drone.Steps {
 }
 
 // Fields TODO 这儿返回所有的参数，上层在执行步骤时，会将参数在日志中打印
-func (p *plugin) Fields() gox.Fields {
-	return gox.Fields{
-		field.String(`todo`, p.Todo),
+func (p *plugin) Fields() gox.Fields[any] {
+	return gox.Fields[any]{
+		field.New("todo", p.Todo),
 	}
 }
