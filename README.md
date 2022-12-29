@@ -23,7 +23,7 @@ Drone插件模板，要编写Drone插件，可以从此模板开始创建项目
     secret_key: xxx
 ```
 
-更多使用教程，请参考[文档](https://www.dronestock.tech/plugin/stock/cos)
+更多使用教程，请参考[文档](https://www.dronestock.tech/plugin/stock/drone)
 
 ## 交流
 
@@ -35,13 +35,16 @@ Drone插件模板，要编写Drone插件，可以从此模板开始创建项目
 ![微信](https://github.com/storezhang/donate/raw/master/weipay-small.jpg)
 
 ## 插件列表
-- [Git](https://www.dronestock.tech/plugin/git) 使用Git推送和拉取代码
-- [Maven](https://www.dronestock.tech/plugin/maven) Maven编译、打包、测试以及发布到仓库
-- [Protobuf](https://www.dronestock.tech/plugin/protobuf) Protobuf编译、静态检查以及高级功能
-- [Docker](https://www.dronestock.tech/plugin/docker) Docker编译、打包以及发布到镜像仓库
-- [Node](https://www.dronestock.tech/plugin/node) Node编译、打包以及发布到仓库
-- [Cos](https://www.dronestock.tech/plugin/cos) 腾讯云对象存储基本配置、文件上传等
-- [Mcu](https://www.dronestock.tech/plugin/mcu) 各种模块依赖文件修改
+
+- [Git](https://www.dronestock.tech/plugin/stock/git) 使用Git推送和拉取代码
+- [Maven](https://www.dronestock.tech/plugin/stock/maven) Maven编译、打包、测试以及发布到仓库
+- [Protobuf](https://www.dronestock.tech/plugin/stock/protobuf) Protobuf编译、静态检查以及高级功能
+- [Docker](https://www.dronestock.tech/plugin/stock/docker) Docker编译、打包以及发布到镜像仓库
+- [Node](https://www.dronestock.tech/plugin/stock/node) Node编译、打包以及发布到仓库
+- [Cos](https://www.dronestock.tech/plugin/stock/cos) 腾讯云对象存储基本配置、文件上传等
+- [Mcu](https://www.dronestock.tech/plugin/stock/mcu) 各种模块依赖文件修改
+- [Apisix](https://www.dronestock.tech/plugin/stock/apisix) Apisix网关插件
+- [Ftp](https://www.dronestock.tech/plugin/stock/ftp) Ftp文件插件
 
 ## 感谢Jetbrains
 
