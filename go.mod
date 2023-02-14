@@ -3,7 +3,7 @@ module github.com/dronestock/todo
 go 1.18
 
 require (
-	github.com/dronestock/drone v0.8.2
+	github.com/dronestock/drone v0.8.3
 	github.com/goexl/gox v0.1.9
 )
 
