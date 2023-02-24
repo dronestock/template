@@ -14,11 +14,15 @@ steps:
   - name: 编译
     image: ccr.ccs.tencentyun.com/pangum/drone
     volumes:
-      - name: go
-        path: /var/lib/go
+      - name: gopath
+        path: /var/lib/gopath
+      - name: gocache
+        path: /var/lib/gocache
+      - name: linter
+        path: /var/lib/linter
     settings:
-      # 可以修改输出文件名，如果修改，Dockerfile也要一起修改
-      output: plugin
+      output:
+        name: plugin
 
   - name: 发布
     image: ccr.ccs.tencentyun.com/dronestock/docker
@@ -32,8 +36,7 @@ steps:
       PASSWORD_CCR:
         from_secret: password_tencentyun_ccr
     settings:
-      # TODO 修改仓库名
-      repository: dronestock/xxx
+      repository: dronestock/todo
       registries:
         - username: dronestock
           password: $${PASSWORD_DOCKER}
@@ -44,9 +47,15 @@ steps:
 
 
 volumes:
-  - name: go
-    host:
-      path: /var/lib/cache/go
   - name: docker
     host:
       path: /var/lib/cache/docker
+  - name: gopath
+    host:
+      path: /var/lib/cache/gopath
+  - name: gocache
+    host:
+      path: /var/lib/cache/gocache
+  - name: linter
+    host:
+      path: /var/lib/cache/linter

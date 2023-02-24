@@ -1,6 +1,6 @@
 module github.com/dronestock/todo
 
-go 1.18
+go 1.19
 
 require (
 	github.com/dronestock/drone v0.8.8
