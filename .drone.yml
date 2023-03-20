@@ -73,7 +73,7 @@ steps:
       PASSWORD_CCR:
         from_secret: password_ccr
     settings:
-      repository: dronestock/${NAME}
+      repository: dronestock/$${NAME}
       registries:
         - username: dronestock
           password: $${PASSWORD_DOCKER}
