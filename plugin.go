@@ -25,7 +25,7 @@ func (p *plugin) Config() drone.Config {
 // Steps TODO 返回所有要执行步骤
 func (p *plugin) Steps() drone.Steps {
 	return drone.Steps{
-		drone.NewStep(p.todo, drone.Name(`启动守护进程`)),
+		drone.NewStep(newStepTodo(p)).Name("样例步骤").Build(),
 	}
 }
 

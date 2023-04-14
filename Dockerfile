@@ -1,12 +1,12 @@
-FROM storezhang/alpine:3.17.2
+FROM dockerproxy.com/storezhang/alpine:3.17.2
 
 
 LABEL author="storezhang<华寅>" \
-email="storezhang@gmail.com" \
-qq="160290688" \
-wechat="storezhang" \
-# TODO 增加描述信息
-description="Drone持续集成Docker插件，增加以下功能：1、xxx；2、xxx"
+    email="storezhang@gmail.com" \
+    qq="160290688" \
+    wechat="storezhang" \
+    # TODO 增加描述信息
+    description="Drone持续集成Docker插件，增加以下功能：1、xxx；2、xxx"
 
 
 # 复制文件

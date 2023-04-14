@@ -1,8 +1,24 @@
 package main
 
-// TODO 步骤，在些写要执行的步骤
-// undo为真表示此步骤可以略过
-// 有错误的话，及时返回
-func (p *plugin) todo() (undo bool, err error) {
+import (
+	"context"
+)
+
+type stepTodo struct {
+	*plugin
+}
+
+// 要不要传入 plugin 可以根据自己的情况来定，如果要使用 plugin 相关方法或者字段，就可以传入
+func newStepTodo(plugin *plugin) *stepTodo {
+	return &stepTodo{
+		plugin: plugin,
+	}
+}
+
+func (st *stepTodo) Runnable() bool {
+	return true
+}
+
+func (st *stepTodo) Run(_ context.Context) (err error) {
 	return
 }
