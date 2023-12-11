@@ -1,4 +1,4 @@
-FROM dockerproxy.com/storezhang/alpine:3.18.5
+FROM dockerproxy.com/storezhang/alpine:3.19.0
 
 
 LABEL author="storezhang<华寅>" \
