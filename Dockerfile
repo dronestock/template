@@ -1,5 +1,9 @@
-FROM dockerproxy.com/storezhang/alpine:3.19.0
+FROM storezhang/alpine:3.19.0 AS builder
 
+COPY semgrep /docker/usr/local/bin
+
+
+FROM storezhang/alpine:3.19.0
 
 LABEL author="storezhang<华寅>" \
     email="storezhang@gmail.com" \
@@ -8,17 +12,10 @@ LABEL author="storezhang<华寅>" \
     # TODO 增加描述信息
     description="Drone持续集成Docker插件，增加以下功能：1、xxx；2、xxx"
 
-
 # 复制文件
-COPY plugin /bin
-
+COPY from=builder /docker /
 
 RUN set -ex \
-    \
-    \
-    \
-    && apk update \
-    && apk --no-cache add docker \
     \
     \
     \
@@ -29,6 +26,5 @@ RUN set -ex \
     \
     && rm -rf /var/cache/apk/*
 
-
 # 执行命令
-ENTRYPOINT /bin/plugin
+ENTRYPOINT /usr/local/bin/plugin
